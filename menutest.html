@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="otherPageGrid">
+
+    <article class="pageLogo" style="font-family: customfont;">
+        <a href="mainpage.html" style="color: #ffC43B;">Outback Kitchen</a>
+    </article>
+
+    <header class="pageHeader">
+        <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="mealdeals.html">Meal Deals</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Your Order</a></li>
+            <li><a href="ourstores.html">Our Stores</a></li>
+        </ul>
+    </header>
+
+    <div class="mainArea">
+
+        <div class="menuItemsGrid">
+
+            <div class="item">
+                item1
+            </div>
+    
+            <div class="item">
+                item2
+            </div>
+    
+            <div class="item">
+                item3
+            </div>
+    
+            <div class="item">
+                item4
+            </div>
+    
+            <div class="item">
+                item5
+            </div>
+    
+            <div class="item">
+                item6
+            </div>
+        </div>
+
+
+    </div>
+
+    <nav class="navBar">
+        nav
+    </nav>*/
+
+
+    <footer class="pageFooter">
+
+        <div style="text-align: left; margin: 10px;">Contact Us:</div>
+
+        <ul style="list-style-type: none; padding: 10px; margin: 10px;">
+
+            <li>outbackkitchensupport@mail.com</li>
+            <li>(+353)838846883</li>
+
+        </ul>
+
+    </footer>
+
+
+    <script>
+
+        window.onscroll = function () { myFunction() };
+
+        var menu = document.querySelector(".pageHeader");
+        var sticky = menu.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                menu.classList.add("sticky")
+            } else {
+                menu.classList.remove("sticky");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

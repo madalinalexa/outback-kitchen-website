@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Meal Deals</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font Awesome is an opensource and free-license font providing icons. -->
+
+</head>
+
+<body class="otherPageGrid">
+
+    <article class="pageLogo" style="font-family: customfont;">
+        <a href="mainpage.html" style="color: #ffC43B;">Outback Kitchen</a>
+    </article>
+
+    <header class="pageHeader">
+        <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="mealdeals.html">Meal Deals</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Your Order</a></li>
+            <li><a href="ourstores.html">Find Us</a></li>
+        </ul>
+    </header>
+
+    <div class="mainArea">
+
+        <div class="dealsItemsGrid itemsText titleText">
+
+            <div class="item">
+                <img src="images/MDburgerfriesdrink.jpg" class="dealsImg" alt="burger fries and drink">
+                <p>Hamburger and French Fries Deal</p>
+                A classic combo of french friend and a hamburger
+
+                <hr class="lineStyle">
+
+                <form>
+                    <input type="button" value="Hamburger, Drink & Fries Deal €16.98" class="button" id="addButtonJS" onclick="addBasket()">
+                </form>
+
+            </div>
+    
+            <div class="item">
+                <img src="images/MDveganburgerchip.jpg" class="dealsImg" alt="vegan burger and chips">
+                <p>Veggie Burger and Chips</p>
+                A vegetarian burger and a side of fresh chips
+
+                <hr class="lineStyle">
+
+                <form>
+                    <input type="button" value="Veggie Burger & Chips Deal €17.95" class="button" id="addButtonJS" onclick="addBasket()">
+                </form>
+
+            </div>
+    
+            <div class="item">
+                <img src="images/MDWedgeswcheesebacon.jpg" class="dealsImg" alt="wedge meal deal">
+                <p>Wedge Meal</p>
+                Wedges, melted cheese and suqare-cut ham pieces with dips
+
+                <hr class="lineStyle">
+
+                <form>
+                    <input type="button" value="Wedge Meal Deal €18.55" class="button" id="dealItem" id="addButtonJS" onclick="addBasket()">
+                </form>
+
+            </div>
+    
+            <div class="item">
+                <img src="images/MDhamburgerfrenchfries.jpg" class="dealsImg" alt="hamburger french fries">
+                <p>Burger and Chips Deal</p>
+                A hamburger with thinly cut chips
+
+                <hr class="lineStyle">
+
+                <form>
+                    <input type="button" value="Burger & Chips Deal €16.95" class="button" id="addButtonJS" onclick="addBasket()">
+                </form>
+
+            </div>
+    
+            
+
+        </div>
+
+
+    </div>
+
+    <nav class="navBar">
+        
+        <div class="basketTitleLine">
+            <span style="font-size: 25px; background-color: #ffc43b; padding: 0 5px;">
+              Your Basket
+            </span>
+
+            <div id="basketList" style="font-family: customFont">
+                
+            </div>
+
+            <hr class="lineStyle" style="margin-bottom: 25px;">
+
+            <div>
+                <form>
+                    <input type="button" value="Checkout" class="button" style="background-color: black; color:#ffc43b"
+                    onclick="window.location.href='order.html';">
+                </form>
+            </div>
+
+          </div>
+
+
+    </nav>
+
+
+    <footer class="pageFooter">
+
+        <div style="margin-top: 2%">
+            <span style="text-align: left; margin: 10px;">
+                <a href="ourstores.html" style="text-decoration:none; font-size: 120%; font-family: customFont; margin: 5px;">Find Us Here:</a>
+    
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.snapchat.com"><i class="fa fa-snapchat-square" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter" style="color:black; font-size: 200%;"></i></a>
+    
+            </span>
+    
+            <span style="text-decoration:none; font-size: 120%; font-family: customFont; margin: 10px;">
+                Contact Us:
+                <a href="https://www.gmail.com" style="margin-left: 10px;"><i class="fa fa-envelope" style="color:black; font-size: 200%;"></i></a>
+    
+            </span>
+        </div>
+
+    </footer>
+
+    <script>
+            
+        var menu = document.querySelector(".pageHeader");
+        var sticky = menu.offsetTop;
+        
+        window.onscroll = function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                menu.classList.add("sticky")
+            } else {
+                menu.classList.remove("sticky");
+            }
+        
+        }
+
+
+        function addBasket(){
+
+            var p = document.createElement("p");
+            
+            var addButton = document.getElementById("addButtonJS").value;
+            var t = document.createTextNode(addButton);
+
+            p.appendChild(t);
+            document.getElementById("basketList").appendChild(p);
+        }
+
+
+
+        </script>
+
+
+</body>
+
+</html>

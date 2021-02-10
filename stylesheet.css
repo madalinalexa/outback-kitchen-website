@@ -1,0 +1,506 @@
+/*Font Awesome is an opensource and free-license font providing icons. 
+There is no imported CSS here.*/
+
+.mainPageGrid{
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo"
+        "header header header"
+        "article article article"
+        "footer footer footer";
+    grid-template-rows: 15% 6% 1fr 10%;
+    grid-template-columns: 20% 1fr 15%;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.pageHeader {
+    grid-area: header;
+    overflow: hidden;
+    background-color: #ffC43B;
+    color: black;
+   
+    display:block;
+    text-align: center;
+    list-style-type: none;
+  }
+.pageFooter {
+    grid-area: footer;
+    background-color: #f2f2f2;
+    font-size: 14px;
+  }
+.pageLogo{
+    grid-area: logo;
+    background-color: #333;
+    color: #ffC43B;
+    font-size: 400%;
+}
+.pageLogo a{
+    position:absolute;
+    top: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    text-decoration: underline overline!important;
+}
+
+.mainArticle { 
+    grid-area: article; 
+    }
+
+.pageHeader li {
+    list-style: none;
+    display: inline;
+}
+
+.pageHeader a {
+    width: 6%;
+    display: inline-block;
+    color: black;
+    padding: 0;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin: 0.1%;
+    text-decoration: none;
+}
+
+.pageHeader a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+
+.pageHeader a:hover::after {
+    width: 100%;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header, article, nav{
+  text-align: center;
+}
+header{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.mainImg{
+    width: 50%;
+}
+
+.imageContainer{
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+}
+.imageText{
+    position: absolute;
+    top:20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    
+}
+
+.mainImageTextTitle{
+    font-family: customFont;
+    font-size: 60px;
+}
+
+.mainImageText{
+    font-size: 20px;
+}
+
+.otherPageGrid{
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo"
+        "header header header"
+        "main main nav"
+        "footer footer footer";
+    grid-template-rows: 15% 6% 1fr 10%;
+    grid-template-columns: 1fr 1fr 15%;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.mainArea{
+    grid-area: main;
+}
+
+.navBar{
+    grid-area: nav;
+    position: sticky;
+    background-color: #ffc34b;
+    width: 100%;
+}
+
+.menuItemsGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left:  10%;
+    padding-right: 10%;
+    background-color: white;
+    /*background-image: url("images/lightwood.png");*/
+}
+
+.item{
+    background-color: white;
+    border-style: solid;
+    border-color:#ffC43B;
+    border-width: thin;
+    width: 100%;
+    padding: 0.5%;
+    margin: 5%;
+}
+
+.menuImg{
+    width: 285px;
+    height: 195px;
+    margin: 1%;
+}
+
+.dealsItemsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left:  10%;
+    padding-right: 10%;
+    background-color: white;
+    /*background-image: url("images/lightwood.png");*/
+}
+
+.dealsImg{
+    margin: 1%;
+    width: 610px;
+    height: 397px;
+}
+
+.itemsText{
+    font-family: cursive;
+}
+
+.titleText p{
+    font-family: customFont;
+    font-size: 22px;
+}
+
+.button{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: customFont;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #ffc43b;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.lineStyle{
+    width:90%;
+    color:black;
+    border-style: solid;
+    margin-top:10px;
+    margin-bottom: 25px;
+}
+
+.basketTitleLine{
+   width: 100%;
+   height: 15px;
+   border-bottom: 1px dotted black;
+   text-align: center;
+}
+
+.findUsGrid{
+    display: grid;
+    grid-template-areas:
+        "time follow";
+    grid-template-rows: 50%;
+    grid-template-columns: 50%;
+    /*background-color: pink;*/
+}
+
+.findGrid1{
+    grid-area: time;
+    height: 35vh;
+    width: 25vw;
+    margin-left: 25%;
+    /*background-color: gray;*/
+}
+.findGrid2{
+    grid-area: follow;
+    height: 35vh;
+    width: 25vw;
+    margin-left: 25%;
+    /*background-color: red;*/
+}
+
+.borderThingy{
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.orderGrid{
+    display: grid;
+    grid-template-areas:
+        "checkout cart";
+    grid-template-rows: 50%;
+    grid-template-columns: 50%;
+    height: 80vh;
+
+    /*background-color: #ffc43b;*/
+}
+.orderCheckout{
+    grid-area: checkout;
+    height: 67vh;
+    width: 55vw;
+    border: 1px solid black;
+    margin-left: 20%;
+    margin-top: 3%;
+    background-color: #ffc43b;
+}
+.orderCart{
+    grid-area: cart;
+    height: 45vh;
+    width: 20vw;
+    margin-left: 34%;
+    margin-top: 3%;
+    background-color: #ffc43b;
+}
+
+.checkoutGrid{
+    display: grid;
+    grid-template-areas:
+        "billing payment"
+        "checkoutBttn checkoutBttn";
+    grid-template-rows: 1fr 5%;
+    grid-template-columns: 5fr 5fr;
+    height: 65vh;
+    background-color: #ffc43b;
+}
+.checkoutBilling{
+    grid-area: billing;
+    height: 60vh;
+    
+    background-color: #ffc43b;
+}
+.checkoutPayment{
+    grid-area: payment;
+    height: 60vh;
+    
+    background-color: #ffc43b;
+
+}
+.checkoutBttn{
+    grid-area: checkoutBttn;
+    height: auto;
+
+    background-color: #ffc43b;
+}
+
+.orderItems{
+    padding: 0 16px;
+    margin: 0 -16px;
+    
+}
+
+.textInput input[type=text]{
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding: 12px;
+}
+.textLabels label{
+    margin-left: 2%;
+}
+
+.textInputSmall input[type=text]{
+    width: 30%;
+    padding: 12px;
+}
+
+.iconStyle i{
+    font-size: 32px;
+    padding: 7px 0;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
+.payButton{
+    display: inline-block;
+
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: customFont;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffc43b;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+}
+
+
+
+@font-face{
+    font-family: customfont;
+    src: /*free-to-use font*/
+         url("fonts/Chewy-Regular.ttf") format("truetype");
+}
+
+
+@media screen and (max-width: 1800px){
+    
+    .dealsItemsGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left:  10%;
+        padding-right: 10%;
+        background-color: white;
+        /*background-image: url("images/lightwood.png");*/
+    }
+
+    .dealsImg{
+        margin: 1%;
+        width: 98%;
+        height: 98%;
+    }
+
+    .menuItemsGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        /*background-image: url("images/lightwood.png");*/
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .imageText{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 1vw;
+        
+    }
+
+    .pageLogo{
+        grid-area: logo;
+        background-color: #333;
+        color: #ffC43B;
+        font-size: 300%;
+    }
+    .pageLogo a{
+        position:absolute;
+        top: 1.5%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        text-decoration: underline overline!important;
+    }
+
+    .pageHeader a {
+        width: 12%;
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .mainImg{
+        width: 100%;
+    }
+
+    .otherPageGrid{
+        display: grid;
+        grid-template-areas: 
+            "logo logo logo"
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        grid-template-rows: 15% 6% 1fr 10%;
+        grid-template-columns: 1fr 1fr 15%;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    .navBar{
+        display:none;
+        grid-area: nav;
+        background-color: #ffc34b;
+        width: 100%;
+    }
+    
+    .menuItemsGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+        /*background-image: url("images/lightwood.png");*/
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .imageText{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 1vw;
+        
+    }
+
+    .menuItemsGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: white;
+        /*background-image: url("images/lightwood.png");*/
+    }
+
+    .mainImageTextTitle{
+        font-family: customFont;
+        font-size: 30px;
+    }
+    
+    .mainImageText{
+        font-size: 15px;
+    }
+
+    
+}
+
+

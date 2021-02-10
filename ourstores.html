@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Find Us</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font Awesome is an opensource and free-license font providing icons. -->
+
+</head>
+
+<body class="mainPageGrid">
+
+    <article class="pageLogo" style="font-family: customfont;">
+        <a href="mainpage.html" style="color: #ffC43B;">Outback Kitchen</a>
+    </article>
+
+    <header class="pageHeader">
+        <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="mealdeals.html">Meal Deals</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Your Order</a></li>
+            <li><a href="ourstores.html">Find Us</a></li>
+        </ul>
+    </header>
+
+    <article class="mainArticle" style="background-color:#ffC43B;">
+
+    <div class="findUsGrid">
+
+        <div class="findGrid1">
+
+            <h1>Opening Times</h1>
+            <p>
+                Monday: 14:00 - 3:00<br>
+                Tuesday: 14:00 - 3:00<br>
+                Wednesday: 14:00 - 3:00<br>
+                Thursday: 14:00 - 3:00<br>
+                Friday: 16:00 - 4:00<br>
+                Saturday: 16:00 - 4:00<br>
+                Sunday: 15:00 - 1:00<br>
+            </p>
+
+        </div>
+
+        <div class="findGrid2">
+
+            <h1>Follow Us</h1>
+
+            <a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="color:black; font-size: 200%;"></i></a><br>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram" style="color:black; font-size:200%;"></a></i><br>
+            <a href="https://www.snapchat.com"><i class="fa fa-snapchat-square" style="color:black; font-size: 200%;"></a></i><br>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter" style="color:black; font-size: 200%;"></a></i><br>
+
+            <div style="font-family: customFont">Got a query? Email us</div><br>
+            <a href="https://www.gmail.com"><i class="fa fa-envelope" style="color:black; font-size: 200%;"></a></i>
+
+        </div>
+
+    </div>
+
+    <hr style="width:90%; color:black; border-style: solid; margin-top:10px; margin-bottom: 25px;">
+
+    <div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d2092.8001002832116!2d-6.26292483103396!3d53.346463673254085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e3!4m0!4m3!3m2!1d53.346877299999996!2d-6.2594463!5e0!3m2!1sen!2sie!4v1587414601077!5m2!1sen!2sie"
+        class="borderThingy" width="90%" height="450"scrolling="no" style="margin-bottom:30px"></iframe>
+    </div>
+
+
+    </article>
+
+
+    <footer class="pageFooter">
+
+        <div style="margin-top: 2%">
+            <span style="text-align: left; margin: 10px;">
+                <a href="ourstores.html" style="text-decoration:none; font-size: 120%; font-family: customFont; margin: 5px;">Find Us Here:</a>
+    
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.snapchat.com"><i class="fa fa-snapchat-square" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter" style="color:black; font-size: 200%;"></i></a>
+    
+            </span>
+    
+            <span style="text-decoration:none; font-size: 120%; font-family: customFont; margin: 10px;">
+                Contact Us:
+                <a href="https://www.gmail.com" style="margin-left: 10px;"><i class="fa fa-envelope" style="color:black; font-size: 200%;"></i></a>
+    
+            </span>
+        </div>
+
+    </footer>
+
+    <script>
+    
+        var menu = document.querySelector(".pageHeader");
+        var sticky = menu.offsetTop;
+        
+        window.onscroll = function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                menu.classList.add("sticky")
+            } else {
+                menu.classList.remove("sticky");
+            }
+        
+        }
+        </script>
+
+</body>
+
+</html>

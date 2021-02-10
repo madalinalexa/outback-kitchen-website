@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Your Order</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font Awesome is an opensource and free-license font providing icons. -->
+
+</head>
+
+<body class="mainPageGrid">
+
+    <article class="pageLogo" style="font-family: customfont;">
+        <a href="mainpage.html" style="color: #ffC43B;">Outback Kitchen</a>
+    </article>
+
+    <header class="pageHeader">
+        <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="mealdeals.html">Meal Deals</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Your Order</a></li>
+            <li><a href="ourstores.html">Find Us</a></li>
+        </ul>
+    </header>
+
+    <article class="mainArticle" style="background-color: #e8a72e" >
+
+        <div style="font-size: 150%">Thank you for ordering from us</div><br>
+        Once your order is confirmed, please expect your food arriving shortly<br>
+        <i class="fa fa-motorcycle" style="color:black; font-size: 180%;"></i>
+        <hr class="lineStyle">
+
+        <div class="orderGrid">
+
+            <div class="orderCheckout">
+                
+            
+                    <form class="checkoutGrid" name="checkoutForm" onsubmit="validateCheckout()">
+        
+                        <div class="checkoutBilling textInput" style="text-align: left;">
+                            
+                            <h3 style="text-align: center; margin: 5%;">Billing Address</h3>
+
+                            <div class="orderItems textLabels">
+
+                                <label for="fname"><i class="fa fa-user"></i> Full Name*</label>
+                                <input type="text" id="fname" name="fullname" placeholder="John M. Doe">
+            
+                                <label for="email"><i class="fa fa-envelope"></i> Email*</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com" >
+            
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address*</label>
+                                <input type="text" id="adr" name="address" placeholder="18 White Stallion Av.">
+            
+                                <label for="county"><i class="fa fa-institution"></i> County*</label>
+                                <input type="text" id="county" name="county" placeholder="Dublin" >
+                            
+                            </div>
+
+                            <div class="textLabels textInputSmall">
+
+                                <label for="town"> Town</label>
+                                <input type="text" id="town" name="town" placeholder="Dublin 2">
+
+                                <label for="zip">Zip*</label>
+                                <input type="text" id="zip" name="zip" placeholder="D01 R5T2">
+
+                            </div>
+        
+                        </div>
+            
+                            <div class="checkoutPayment textInput textLabels" style="text-align: left;">
+                            
+                                <h3 style="text-align: center; margin: 5%;">Payment</h3>
+
+                                <label for="fname">Accepted Cards</label>
+
+                                <div class="iconStyle">
+
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-paypal" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-credit-card" style="color:black;"></i>
+                            
+                            </div>
+                            
+                                <div>
+
+                                    <label for="cname">Name on Card*</label>
+                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe" >
+                                    <label for="ccnum">Credit card number*</label>
+                                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                    <label for="expmonth">Exp Month*</label>
+                                    <input type="text" id="expmonth" name="expmonth" placeholder="September" >
+
+                                    <div class="textLabels textInputSmall">
+                                        <label for="exp"> Exp Yr*</label>
+                                        <input type="text" id="exp" name="exp" placeholder="2021" >
+            
+                                        <label for="cvv">CVV*</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="777" >
+                                    </div>
+
+                                </div>
+
+                        </div>
+        
+
+                        <div class="checkoutBttn">
+                            <input type="submit" value="Proceed Payment" class="payButton">
+                        </div>
+
+                        
+
+        
+                    </form>
+
+            </div>
+
+
+            
+                    <div class="orderCart borderThingy" style="border-radius: 0px">
+                        
+                        <h4>Basket
+                            <span style="color:black">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b>
+                            </span>
+                        </h4>
+
+                        <div style="font-family: customFont">
+                            <p><a href="#">Margherita</a> €16.95</p>
+                            <p><a href="#">Vegetarian</a> €20.98</p>
+                            <p><a href="#">Classic Burger</a> €12.55</p>
+                            <p><a href="#">Subway</a> €6.50</p>
+                            <p><a href="#">Veggie Burger and Chips</a> €17.95</p>
+                        </div>
+
+                        <hr class="lineStyle">
+
+                        <div style="font-family: customFont">Total
+                            <div style="color:black">
+                                <b>€74.93</b>
+                            </div>
+                        </div>
+
+                    </div>
+
+        </div>
+
+    </article>
+
+
+    <footer class="pageFooter">
+
+        <div style="margin-top: 2%">
+            <span style="text-align: left; margin: 10px;">
+                <a href="ourstores.html" style="text-decoration:none; font-size: 120%; font-family: customFont; margin: 5px;">Find Us Here:</a>
+    
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.snapchat.com"><i class="fa fa-snapchat-square" style="color:black; font-size: 200%;"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter" style="color:black; font-size: 200%;"></i></a>
+    
+            </span>
+    
+            <span style="text-decoration:none; font-size: 120%; font-family: customFont; margin: 10px;">
+                Contact Us:
+                <a href="https://www.gmail.com" style="margin-left: 10px;"><i class="fa fa-envelope" style="color:black; font-size: 200%;"></i></a>
+    
+            </span>
+        </div>
+
+    </footer>
+
+    <script> 
+        
+        var menu = document.querySelector(".pageHeader");
+        var sticky = menu.offsetTop;
+        
+        window.onscroll = function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                menu.classList.add("sticky")
+            } else {
+                menu.classList.remove("sticky");
+            }
+        
+        }
+
+        function validateCheckout(){
+
+            
+            if(document.checkoutForm.fullname.value == ""){
+                fullnameAlert = "You must provide your name\n";
+            }
+
+            if(document.checkoutForm.email.value == ""){
+                emailAlert = "You must provide your email\n";
+            }
+            
+            if(document.checkoutForm.address.value == ""){
+                addressAlert = "You must provide your address\n";
+            }
+            
+            if(document.checkoutForm.county.value == ""){
+                countyAlert = "You must provide your county\n";
+            }
+
+            if(document.checkoutForm.zip.value == ""){
+                zipAlert = "You must prove you zip\n";
+            }
+
+            if(document.checkoutForm.cardname.value == ""){
+                cardnameAlert = "You must provide the name on your card\n";
+            }
+
+            if(document.checkoutForm.cardnumber.value == ""){
+                cardnumberAlert = "You must provide a card number\n";
+            }
+
+            if(document.checkoutForm.expmonth.value == ""){
+                expmonthAlert = "You must provide expiry month\n";
+            }
+
+            if(document.checkoutForm.exp.value == ""){
+                expAlert = "You must provie year of expiry\n";
+            }
+
+            if(document.checkoutForm.cvv.value == ""){
+                cvvAlert = "You must prove CVV value\n";
+            }
+
+            alert(fullnameAlert + emailAlert + addressAlert + countyAlert
+             + zipAlert + cardnameAlert + cardnumberAlert 
+             +  expmonthAlert + expAlert + cvvAlert);
+
+        }
+
+
+        </script>
+
+
+</body>
+
+</html>
